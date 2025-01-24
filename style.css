@@ -1,0 +1,123 @@
+/* Resetting margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for overall layout and background */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #74ebd5, #4361e6);
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container styling for layout and design */
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button styling for choices */
+.choices button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Button hover effect */
+.choices button:hover {
+    background: #74ebd5;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    /* transform: scale(1.1); */
+}
+
+/* Styling for Unlimited Rounds button */
+#five-round {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Unlimited Rounds button hover effect */
+#five-round:hover {
+    background: #45a049;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Result text styling */
+#result {
+    margin: 10px;
+    font-size: 18px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Score text styling */
+#score {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px;
+    color: #333;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
